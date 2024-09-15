@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş tam ədədi tərkibindəki tək rəqəmlərin cəmini hesablayan bir funksiya yaz.
+         İnput: 13572
+         Output:   9 (1 + 3 + 5) -->
+
+    <script>
+        const sumOfDigits = function (number) {
+            let digits = number.toString().split('')
+            let sum = 0
+            for (let i = 0; i < digits.length; i++) {
+                if (+digits[i] % 2 !== 0) {
+                    sum += +digits[i]   
+                }    
+            }
+            return sum
+        }
+        console.log(sumOfDigits(13572111));
+
+    </script>
+</body>
+
+</html>

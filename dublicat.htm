@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş array-də təkrarlanan (dublikat) elementləri tapan bir funksiya yaz. Burada filter() və indexOf()
+    metodlarından istifadə et. -->
+
+    <script>
+        const dublicatElements = function(array){
+            let arr2 =[]
+            array.filter(item => {
+               if(array.indexOf(item) !== array.lastIndexOf(item)  && !arr2.includes(item)) {
+                 arr2.push(item)
+               }
+                
+            })
+            return arr2
+        }
+        console.log(dublicatElements([1,2,3,4,1,1,2]));
+        
+    </script>
+</body>
+
+</html>

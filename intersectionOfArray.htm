@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- verilmiş iki array-in kəsişən elementlərini tapan bir funksiya yaz. Kəsişmədə təkrarlanan elementlər olmasın.
+input [4, 9, 5], [9, 4, 9, 8, 4]
+out: [4, 9] -->
+    <script>
+        const intersectionOfArrays = function(array1, array2){
+            let arr3 = []
+             array1.filter(item => {
+               if(array2.includes(item) && !arr3.includes(item)){
+                arr3.push(item)
+               }
+            })
+            return arr3
+        }
+        console.log(intersectionOfArrays([1,2,3,4,5,5],[2,3,4,5,2,4,5,5,5]));
+        
+
+    </script>
+</body>
+
+</html>

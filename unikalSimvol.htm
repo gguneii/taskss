@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş bir sətirdə unikal (təkrarlanmayan) simvolların sayını tapan bir funksiya yaz.
+     meselen: alabaş 
+     3 ("l", "b", "ş") -->
+    <script>
+        const unicalSimvol = function (word) {
+            let sum = 0
+            let str = []
+            for (let i = 0; i < word.length; i++) {
+                if (word.indexOf(word[i]) === word.lastIndexOf(word[i])) {              
+                    str.push(word[i])
+                }
+            }
+            return str.length
+        }
+        console.log(unicalSimvol("alabaş"));
+
+    </script>
+</body>
+
+</html>

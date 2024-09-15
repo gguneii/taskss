@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş cümləni tersinə çevirən bir funksiyanı yaz. Sözlər arası boşluqlar saxlanmalıdır.
+misal: input : "Bu gün hava çox gözəldir" 
+output: "ridlezög xoç avah nüg uB" -->
+    <script>
+        const reverseOfSentence = function(sentence) {
+            let reverse= sentence.toString().split('').reverse().join('')
+            return reverse
+        }
+        console.log(reverseOfSentence("Bu gün hava çox gözəldir"));
+        console.log(reverseOfSentence("Guney necesen?"));
+        
+    </script>
+</body>
+
+</html>
